@@ -3,7 +3,7 @@
 
 **Introduction:**
 
-This repository contains implementations of genetic algorithms to solve three distinct optimization problems: N-Queens, String Matching, and Bin Packing.
+This repository contains implementations of genetic algorithms to solve three distinct optimization problems: N-Queens, String Matching, and Bin Packing. It also represents the island model.
 
 **1. N-Queens**
 
@@ -34,10 +34,22 @@ Genetic Algorithm Components:
 
 5. Clustering: Clustering involves grouping similar individuals together. This approach helps in maintaining diversity and allows the algorithm to explore different regions of the solution space by focusing on different clusters in the population.
 
- Running the project: 
+**Island model:**
+
+-islands.py file implements a genetic algorithm to solve two specific optimization problems, represented by function_f and function_g. The algorithm operates on two populations (islands) and employs various genetic operations such as selection, crossover, mutation, and migration to evolve solutions.
+
+-Function F represents an optimization problem where the goal is to find a vector (x, y) such that x^2 + y^2 is minimized, subject to the constraint x^2 + y^2 <= 9.
+
+-Function G represents another optimization problem aiming to find a vector (x, y) that minimizes (x - 5)^2 + (y - 5)^2, subject to the constraint (x - 5)^2 + (y - 5)^2 <= 4.
+
+-Migration occurs between the two islands (populations) at specified intervals. Different selection types (Random, RWS) can be used for selecting migrants. The migration function handles the migration process, ensuring that the immigrants satisfy the problem constraints.
+
+**Running the project:**
  3 files included :
  1. main.py : for string matching problem.
  2. N_queens.py : for N-Queens problem.
  3. updated_bin_packing.py : for bin packing problem.
+ 4. islands.py : for island model.
+    
 To run the project run the code then answer the given questions and wait for the results.
 
